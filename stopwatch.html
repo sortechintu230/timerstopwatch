@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer | Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="timer.html"> <img src="resources/timer.png" alt="?"> Timer</a></li>
+            <li class="nav-active"><a href="stopwatch.html"> <img src="resources/hourglass.png" alt="?"> Stopwatch</a></li>
+        </ul>
+    </nav>
+    <div class="timer-card timer-card-stopwatch">
+        <div class="timer stopwatch">
+            <span class="min">00</span><b>min</b>
+            <span class="seprator">:</span>
+            <span class="sec">00</span><b>sec</b>
+            <span class="seprator">:</span>
+            <span class="milisec">00</span><b>milisec</b>
+        </div>
+        <div class="btns">
+            <button class="start-btn btn">Start</button>
+            <button class="stop-btn btn">Stop</button>
+            <button class="reset-btn btn">Reset</button>
+        </div>
+    </div>
+    <script src="stopwatch.js"></script>
+</body>
+</html>

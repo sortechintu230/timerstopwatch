@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(46, 46, 46);
+}
+main{
+    height: 100vh;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size:2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+nav ul li img{
+    width: 30px;
+    height: 30px;
+}
+.nav-active{
+    text-decoration: underline 8px solid #1976D2;
+    text-underline-offset: 15px ;
+}
+.set-timer-container{
+    width: 50vw;
+    margin: auto;
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.set-timer-container .heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.timer-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.timer-input span{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.timer-input input{
+    width: 70px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #1976D2;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: #1976D2;
+    transition: .2s linear;
+    border: 2px solid #1976D2;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #0d5cab;
+}
+.timer-card{
+    width: 30vw;
+    padding: 70px;
+    border: 1px solid grey;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+    margin-bottom: 50px;
+}
+.start-btn,.stop-btn,.reset-btn{
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.stop-btn{
+    background-color: #F44336;
+    border: 3px solid #F44336;
+}
+.stop-btn:hover{
+    background-color: #ca372d;
+}
+.reset-btn{
+    background-color: #8BC34A;
+    border: 2px solid #8BC34A;
+}
+.reset-btn:hover{
+    background-color: #6e9e37;
+}
+.timer span{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.timer-card-stopwatch{
+    position: relative;
+    top: 10rem;
+}
+.timer{
+    box-sizing:content-box;
+}
+@media(max-width: 680px){
+    .timer span{
+        font-size: 1.6rem;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    .set-timer-container{
+        width: 68vw;
+        flex-direction: column;
+    }
+}
+@media(max-width: 392px){
+   .timer-input input{
+    width: 50px;
+   }
+    nav ul{
+        gap: 1rem;
+    }
+    .btns{
+        margin: auto;
+    }
+    .timer-card-stopwatch{
+        top: 5rem;
+    }
+    .timer-card{
+        padding: 20px;
+        width: 80vw;
+    }
+}
+@media(max-width: 280px){
+    .heading h2{
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+    .btn{
+        width: 80px;
+    }
+}

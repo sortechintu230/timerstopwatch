@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer | Stopwatch</title>
+</head>
+
+<body>
+<main>
+
+    <nav>
+        <ul>
+            <li class="nav-active"><a href="timer.html"> <img src="resources/timer.png" alt="?"> Timer</a></li>
+            <li><a href="stopwatch.html"> <img src="resources/hourglass.png" alt="?"> Stopwatch</a></li>
+        </ul>
+    </nav>
+    <!-- Timer container -->
+    <div class="set-timer-container">
+        <div class="heading">
+            <h2>Set Timer</h2>
+        </div>
+        <div class="timer-input">
+            <div class="min-input">
+                <input type="number" name="minute" id="min">
+            </div>
+            <span>:</span>
+            <div class="sec-input">
+                <input type="number" name="second" id="sec">
+            </div>
+        </div>
+        <div class="btn">
+            <button class="btn" id="setbtn">Set</button>
+        </div>
+    </div>
+    <!-- timer card -->
+    <div class="timer-card">
+        <div class="timer">
+            <span class="min">00</span><b>min</b>
+            <span class="seprator">:</span>
+            <span class="sec">00</span><b>sec</b>
+        </div>
+        <div class="btns">
+            <button class="start-btn btn">Start</button>
+            <button class="stop-btn btn">Stop</button>
+            <button class="reset-btn btn">Reset</button>
+        </div>
+    </div>
+</main>
+    <script src="timer.js"></script>
+</body>
+
+</html>
